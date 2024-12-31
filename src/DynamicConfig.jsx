@@ -8,7 +8,7 @@ const DynamicConfig = () => {
   useEffect(() => {
     const fetchConfig = async () => {
       try {
-        const response = await fetch("/config.json"); // Path to your config file
+        const response = await fetch("/config/config.json"); // Path to your config file
         const data = await response.json();
         setConfig(data);
         setUpdatedConfig(data); // Initialize updatedConfig with the current config
